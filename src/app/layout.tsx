@@ -4,6 +4,7 @@ import { Footer } from '@/components/ui/footer';
 import { Toaster } from 'sonner';
 import "./globals.css"
 import { Checkout } from '@/components/ui/checkout';
+import { Separator } from '@/components/ui/separator';
 
 // Correctly import and configure Space_Grotesk
 const spaceGrotesk = Space_Grotesk({
@@ -27,6 +28,7 @@ export default function RootLayout({
         {children}
         <Toaster position="top-center" />
         <Checkout />
+        <Separator />
         <Footer />
       </body>
     </html>
